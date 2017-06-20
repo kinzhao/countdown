@@ -1,0 +1,91 @@
+@import "compass";
+@import "compass/reset";
+body {
+    background-color: #121314;
+    font-family: "Lucida Console", Monaco, monospace;
+    text-align: center;
+    color: #88898c;
+    .countdown-header {
+        color: #dfe0e6;
+        margin: 50px auto 6px auto;
+        font-weight: 500;
+    }
+    .countdown-container {
+        margin: 20px auto;
+        .countdown-text {
+	        margin: 25px auto;
+	        &:first-child {
+	        	margin-bottom: 50px;
+	        }
+	    }
+        .countdown {
+	        .flip-clock-label {
+	        	color: #fff;
+				text-transform: uppercase;
+	        }
+        }
+    }
+}
+
+@media screen and (min-width: 650px) {
+	.countdown-header {
+		font-size: 32px;
+	}
+    .countdown-container {
+        width: 650px;
+        .flip-clock-label {
+        	font-size: 14px;
+        }
+        .countdown-text {
+        	font-size: 28px;
+        }
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 649px) {
+    .countdown-header {
+		font-size: 24px;
+	}
+    .countdown-container {
+        width: 440px;
+        .countdown-text {
+        	font-size: 20px;
+        }
+        .countdown {
+	        zoom: 0.7;
+	        -moz-transform: scale(0.7);
+	        .flip-clock-label {
+	        	font-size: 14px;
+	        }
+	    }
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .countdown-header {
+		font-size: 18px;
+	}
+    .countdown-container {
+        width: 248px;
+        .countdown-text {
+        	font-size: 16px;
+        }
+        .countdown {
+	        zoom: 0.5;
+	        -moz-transform: scale(0.5);
+	        .flip-clock-divider.seconds {
+	            display: none;
+	        }
+	        ul {
+	            &:nth-child(11),
+	            &:nth-child(12) {
+	                display: none;
+	            }
+	        }
+	        .flip-clock-label {
+	        	font-size: 12px;
+	        }
+	    }
+    }
+
+}
