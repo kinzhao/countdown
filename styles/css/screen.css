@@ -1,4 +1,4 @@
-/* line 5, ../../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -68,103 +68,109 @@ body {
   background-color: #121314;
   font-family: "Lucida Console", Monaco, monospace;
   text-align: center;
-  color: #88898c;
+  color: #fff;
 }
 /* line 8, ../sass/screen.scss */
 body .countdown-header {
   color: #dfe0e6;
-  margin: 50px auto 6px auto;
-  font-weight: 500;
 }
-/* line 13, ../sass/screen.scss */
+/* line 11, ../sass/screen.scss */
+body .countdown-text {
+  font-size: 16px;
+  margin-bottom: 50px;
+  color: #fff;
+}
+/* line 16, ../sass/screen.scss */
 body .countdown-container {
   margin: 20px auto;
 }
-/* line 15, ../sass/screen.scss */
+/* line 19, ../sass/screen.scss */
 body .countdown-container .countdown-text {
-  margin: 25px auto;
+  font-size: 16px;
+  color: #88898c;
 }
-/* line 17, ../sass/screen.scss */
-body .countdown-container .countdown-text:first-child {
-  margin-bottom: 50px;
+/* line 24, ../sass/screen.scss */
+body .countdown-container .countdown-text small.red {
+  font-size: 16px;
+  color: #FF0000;
 }
-/* line 22, ../sass/screen.scss */
+/* line 31, ../sass/screen.scss */
 body .countdown-container .countdown .flip-clock-label {
   color: #fff;
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 650px) {
-  /* line 31, ../sass/screen.scss */
+@media screen and (min-width: 750px) {
+  /* line 40, ../sass/screen.scss */
   .countdown-header {
     font-size: 32px;
   }
 
-  /* line 34, ../sass/screen.scss */
+  /* line 43, ../sass/screen.scss */
   .countdown-container {
-    width: 650px;
+    width: 716px;
   }
-  /* line 36, ../sass/screen.scss */
+  /* line 45, ../sass/screen.scss */
   .countdown-container .flip-clock-label {
     font-size: 14px;
   }
-  /* line 39, ../sass/screen.scss */
-  .countdown-container .countdown-text {
-    font-size: 28px;
-  }
 }
-@media screen and (min-width: 500px) and (max-width: 649px) {
-  /* line 46, ../sass/screen.scss */
+@media screen and (min-width: 500px) and (max-width: 749px) {
+  /* line 53, ../sass/screen.scss */
   .countdown-header {
     font-size: 24px;
   }
 
-  /* line 49, ../sass/screen.scss */
+  /* line 56, ../sass/screen.scss */
   .countdown-container {
-    width: 440px;
+    width: 390px;
   }
-  /* line 51, ../sass/screen.scss */
-  .countdown-container .countdown-text {
-    font-size: 20px;
-  }
-  /* line 54, ../sass/screen.scss */
+  /* line 59, ../sass/screen.scss */
   .countdown-container .countdown {
     zoom: 0.7;
     -moz-transform: scale(0.7);
   }
-  /* line 57, ../sass/screen.scss */
+  /* line 62, ../sass/screen.scss */
   .countdown-container .countdown .flip-clock-label {
     font-size: 14px;
   }
+  /* line 65, ../sass/screen.scss */
+  .countdown-container .countdown .flip-clock-divider.seconds {
+    display: none;
+  }
+  /* line 69, ../sass/screen.scss */
+  .countdown-container .countdown ul:nth-last-of-type(-n+2) {
+    display: none;
+  }
 }
 @media screen and (max-width: 499px) {
-  /* line 65, ../sass/screen.scss */
+  /* line 78, ../sass/screen.scss */
   .countdown-header {
     font-size: 18px;
   }
 
-  /* line 68, ../sass/screen.scss */
+  /* line 81, ../sass/screen.scss */
   .countdown-container {
-    width: 248px;
+    width: 280px;
   }
-  /* line 70, ../sass/screen.scss */
-  .countdown-container .countdown-text {
-    font-size: 16px;
-  }
-  /* line 73, ../sass/screen.scss */
+  /* line 83, ../sass/screen.scss */
   .countdown-container .countdown {
     zoom: 0.5;
     -moz-transform: scale(0.5);
   }
-  /* line 76, ../sass/screen.scss */
+  /* line 86, ../sass/screen.scss */
+  .countdown-container .countdown.flip-clock-wrapper {
+    margin: 15px 14px;
+  }
+  /* line 89, ../sass/screen.scss */
   .countdown-container .countdown .flip-clock-divider.seconds {
     display: none;
   }
-  /* line 80, ../sass/screen.scss */
-  .countdown-container .countdown ul:nth-child(11), .countdown-container .countdown ul:nth-child(12) {
+  /* line 93, ../sass/screen.scss */
+  .countdown-container .countdown ul:nth-last-of-type(-n+2) {
     display: none;
   }
-  /* line 85, ../sass/screen.scss */
+  /* line 97, ../sass/screen.scss */
   .countdown-container .countdown .flip-clock-label {
     font-size: 12px;
   }
